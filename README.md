@@ -94,7 +94,9 @@ repository.
 
 
 9. In this example, the **Student Portfolio ID** is `67672`.
-10. Put this number in your .env
+
+10. Put this number in your .env.
+
 
 
 ## Find a section ID
