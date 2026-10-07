@@ -13,14 +13,13 @@ Use these scripts only with an account and registration activity you are
 authorized to automate. You are responsible for following BRACU's rules and
 any applicable policies.
 
-## Why this process is intentionally inconvenient
+## SO MUCH WORKKKKK(?)
 
 Intentionally inconvenient for OBVIOUS REASONS.
 
 ## Requirements
 
 - Windows with Python 3.10 or newer.
-- A BRACU account that is allowed to use the self-registration page.
 - Playwright and its Chromium browser.
 - Network access to `connect.bracu.ac.bd`.
 
@@ -72,13 +71,33 @@ Existing process environment variables take precedence over values in `.env`.
 Do not commit real account-specific IDs or browser profile data to a public
 repository.
 
+## Find Your Student Portfolio ID
+
+1. Log in to [BRACU Connect](https://connect.bracu.ac.bd/).
+2. Go to [Self Registration](https://connect.bracu.ac.bd/student/advising/self-registration).
+
+3. Open **Developer Tools** by either:
+   - Pressing **F12**, or
+   - Right-clicking anywhere on the page and selecting **Inspect**.
+
+4. In the Developer Tools window, open the **Network** tab.
+
+5. Refresh the page (`Ctrl + R`) so that the network requests are captured again.
+
+6. In the Network tab, look for a request containing a 5 to 6 digit number:
+
+<img width="586" height="719" alt="image" src="https://github.com/user-attachments/assets/88f8dc24-b584-4592-83b1-3a06818b3ed6" />
+
+
+
+8. The number is your **Student Portfolio ID**.
+
+
+9. In this example, the **Student Portfolio ID** is `67672`.
+
+
 ## Find a section ID
 
-The public course feed is:
-
-```text
-https://usis-cdn.eniamza.com/connect.json
-```
 
 Run the helper with a course code and section number:
 
