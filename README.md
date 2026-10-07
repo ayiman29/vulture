@@ -75,27 +75,19 @@ repository.
 
 1. Log in to [BRACU Connect](https://connect.bracu.ac.bd/).
 2. Go to [Self Registration](https://connect.bracu.ac.bd/student/advising/self-registration).
-
 3. Open **Developer Tools** by either:
-   - Pressing **F12**, or
-   - Right-clicking anywhere on the page and selecting **Inspect**.
 
+   * Pressing **F12**, or
+   * Right-clicking anywhere on the page and selecting **Inspect**.
 4. In the Developer Tools window, open the **Network** tab.
-
 5. Refresh the page (`Ctrl + R`) so that the network requests are captured again.
-
 6. In the Network tab, look for a request containing a 5 to 6 digit number:
 
 <img width="586" height="719" alt="image" src="https://github.com/user-attachments/assets/88f8dc24-b584-4592-83b1-3a06818b3ed6" />
 
-
-
-8. The number is your **Student Portfolio ID**.
-
-
-9. In this example, the **Student Portfolio ID** is `67672`.
-
-10. Put this number in your .env.
+7. The number is your **Student Portfolio ID**.
+8. In this example, the **Student Portfolio ID** is `67672`.
+9. Put this number in your `.env` file.
 
 
 
